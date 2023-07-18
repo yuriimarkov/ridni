@@ -1,3 +1,19 @@
 :root {
     --default-font: 'Sofia Sans', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --black: #0E1120;
+    --white: #FFFBFF;
+    --secondary-white: #F6FFF0;
+    --burnt-sienna: #3F2E00;
+    --key-yellow: #FFC93C;
+    --darker-yellow: #FFD573;
+    --rich-gold: #FFEFD2;
+    --emerald-green: #254626;
+    --key-green: #4B714A;
+    --lighter-green: #AFCFAB;
+    --melisa: #D9FAD3;
+    --passion: #93000A;
+    --carmine: #DE3730;
+    --light-rose: #FF897D;
+    --white-red: #FFEDEA; 
   }
