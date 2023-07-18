@@ -1,0 +1,11 @@
+@import './variables.module.css';
+
+*,
+*::before,
+*::after {
+   padding: 0;
+}
+
+body {
+   font-family: var(--default-font);
+}
