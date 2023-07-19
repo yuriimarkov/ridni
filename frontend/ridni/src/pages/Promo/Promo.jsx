@@ -13,15 +13,17 @@ const Promo = () => {
   return (
     <div className={styles.wrapper}>
       <header className={styles.header}>
-        <h1 className={styles.headerSlogan}>Crafted with love</h1>
-        <div>
+        <div className={styles.content}>
+          <h1 className={styles.headerSlogan}>Crafted with love</h1>
           <span className={styles.logoImg}>by</span>
           people
         </div>
-        <Button
-          className={`btn-basic ${styles.whiteBtn}`}
-          text={"Go shop now"}
-        />
+        <div className={styles.buttonHolder}>
+          <Button
+            className={`${styles.baseBtn} ${styles.whiteBtn}`}
+            text={"Go shop now"}
+          />
+        </div>
       </header>
       <main>
         <section className={styles.sectionBenefits}>
