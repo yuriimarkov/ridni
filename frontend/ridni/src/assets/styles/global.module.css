@@ -1,16 +1,23 @@
-@import './variables.module.css';
+@import "./variables.module.css";
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap");
+@import "./normalize.css";
 
 *,
 *::before,
 *::after {
+<<<<<<< HEAD
    padding: 0;
    margin: 0;
+=======
+  padding: 0;
+>>>>>>> e1dd469e24d8d692523a2c72369a049a98398f50
 }
 
 body {
-   font-family: var(--default-font);
-   font-size: 16px;
-   color: var(--black);
+  font-family: var(--default-font);
+  font-size: 16px;
+  color: var(--black);
+  margin: 0;
 }
 
 h2 {
