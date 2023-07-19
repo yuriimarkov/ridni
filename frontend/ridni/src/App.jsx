@@ -1,4 +1,4 @@
-import "./App.css";
+
 import Promo from "./pages/Promo/Promo";
 
 const App = () => {

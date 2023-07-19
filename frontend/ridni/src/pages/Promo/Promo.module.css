@@ -1,82 +1,220 @@
 @import './../../assets/styles/variables.module.css';
 
-
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 15px;
- }
- 
 .popularCategoryPromo {
+  padding: 38px 0;
+
+  .container {
     display: flex;
     flex-direction: column;
-}
-
-.heading {
-    color: #0E1120;
-    text-align: center;
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 16px;
-}
-
-.cards {
+  }
+  .cards {
     display: flex;
     gap: 50px;
+    padding: 60px 0;
+  }
+
+  
+.cardItem {
+  padding: 20px;
+  width: calc(100% / 3);
+  border-radius: 20px;
+  border: 3px solid var(--key-green);
 }
 
-.cardItem {
-    padding: 20px;
-    width: calc(100% / 3);
-    border-radius: 20px;
-    border: 3px solid #4B714A;
-}
 
 .imageHolder {
-    width: 100%;
+  width: 100%;
+}
+.buttonHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 27px 0 20px;
 }
 
-.imageHolder img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-.buttonHolder { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn {
-    display: flex;
-    width: 136px;
-    height: 54px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-    background-color: transparent;
-    border-radius: 15px;
-    border: 1px solid #FFC93C;
-
-    color: #0E1120;
-    font-size: 24px;
-    font-weight: 300;
+.yellow {
+  width: 136px;
+  border-color: var(--key-yellow);
 }
 
 .itemHeading {
-    line-height: 16px;
-    font-size: 24px;
-    margin: 0;
-    padding: 40px 0;
+  line-height: 16px;
+  font-size: 24px;
+  margin: 0;
+  padding: 40px 0;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.paginationItem {
+  width: 9px;
+  height: 9px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--key-green);
+}
+
+.paginationItemActive {
+  background-color: var(--key-green);
+}
+}
+
+.sellersPromo {
+  padding: 100px 0;
+
+  .yellow {
+    border-color: var(--key-yellow);
+  }
+
+  .container {
+      flex-direction: column;
+      padding: 0;
+      max-width: 100%;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .imageHolder {
+    width: 45%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  .heading {
+    padding-bottom: 70px;
+  }
+
+  .textHolder {
+    padding: 80px 0;
+    font-size: 45px;
+    font-weight: 300;
+  }
+
 }
 
 .footer {
+  background-color: #254626;
+  padding: 20px 0;
+  
+  .container {
     display: flex;
+    flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+  .servises {
+    display: flex;
+    gap: 51px;
+    color: var(--white);
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .popularCategoryPromo {
+    .cards {
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .cardItem{
+      width: calc(100% / 2 - 65px);
+    }
+    .itemHeading {
+      line-height: 32px;
+    }
+  }
+
+  .sellersPromo {
+    .info {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .imageHolder{
+      width: 100%;
+    }
+
+    .content {
+      width: 75%;
+      align-items: center;
+    }
+
+    .textHolder {
+      text-align: center;
+      padding-bottom: 50px;
+      font-size: 40px;
+    }
+  }
+
+  .footer {
+    .footerLogo {
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .popularCategoryPromo {
+
+
+  .itemHeading {
+    font-size: 20px;
+  }
+
+  .cards{
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .cardItem {
+    width: 100%;
+  }
+}
+.sellersPromo {
+
+  .info {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background-color: #254626;
+      justify-content: center;
+  }
+
+  .imageHolder{
+    width: 100%;
+  }
+
+  .content {
+    width: 93%;
+    align-items: center;
+  }
+
+  .heading {
+    padding-bottom: 20px;
+  }
+
+  .textHolder {
+    font-size: 21px;
+    line-height: 16px;
+    padding: 30px 0;
+  }
+}
+.footer {
+  .servises {
+    font-size: 10px;
+  }
+}
 }
