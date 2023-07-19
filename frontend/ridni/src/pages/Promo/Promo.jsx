@@ -1,3 +1,5 @@
+import React from "react";
+
 import styles from "./Promo.module.css";
 import globalStyle from "./../../assets/styles/global.module.css";
 import promoJewelery from "../../assets/images/promoJewelery.png";
