@@ -368,6 +368,7 @@
     }
 
     .buttonHolder { 
+      margin-left: -102px;
       display: flex;
       justify-content: center;
     }
@@ -394,7 +395,7 @@
   .sectionBenefits {
     .heading {
       font-size: 48px; 
-      padding: 180px 0 163px;
+      padding: 180px 0 163px0;
     }
 
     .benefits {
@@ -402,7 +403,7 @@
       grid-row-gap: 85px;
       padding-left: 80px;
       padding-right: 80px;
-      padding-bottom: 206px;
+      padding-bottom: 0;
     }
     .benefitsItem {
       padding-left: 0;
@@ -460,6 +461,7 @@
     }
 
     .buttonHolder {
+      margin: 0;
       padding-bottom: 70px;
       display: flex;
       justify-content: center;
