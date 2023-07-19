@@ -43,7 +43,7 @@ const Promo = () => {
           </div>
         </section>
         <section className={styles.popularCategoryPromo}>
-          <div className={styles.container}>
+          <div className={`${styles.container} ${globalStyle.container}`}>
             <h2 className={styles.heading}>Most popular categories</h2>
             <div className={styles.cards}>
               <div className={styles.cardItem}>
@@ -58,10 +58,7 @@ const Promo = () => {
                   </p>
                 </div>
                 <div className={styles.buttonHolder}>
-                  <Button
-                    className={`${styles.btn} ${styles.yellow}`}
-                    text={"Want it!"}
-                  />
+                  <Button className={styles.yellow} text={"Want it!"} />
                 </div>
               </div>
               <div className={styles.cardItem}>
@@ -77,7 +74,7 @@ const Promo = () => {
                 </div>
                 <div className={styles.buttonHolder}>
                   <Button
-                    className={`${styles.btn} ${styles.yellow}`}
+                    className={styles.yellow}
                     text={"Want it!"}
                     onClick={() => {}}
                   />
@@ -95,34 +92,50 @@ const Promo = () => {
                   </p>
                 </div>
                 <div className={styles.buttonHolder}>
-                  <Button
-                    className={`${styles.btn} ${styles.yellow}`}
-                    text={"Want it!"}
-                  />
+                  <Button className={styles.yellow} text={"Want it!"} />
                 </div>
               </div>
             </div>
             <div className={styles.pagination}>
-              <span>0</span>
+              <span
+                className={`${styles.paginationItem} ${styles.paginationItemActive}`}
+              ></span>
+              <span className={`${styles.paginationItem}`}></span>
             </div>
           </div>
         </section>
         <section className={styles.sellersPromo}>
-          <div className={styles.container}>
+          <div className={`${styles.container} ${globalStyle.container}`}>
             <h2 className={styles.heading}>Become a creativity provider</h2>
-            <div className={styles.content}>
+            <div className={styles.info}>
               <div className={styles.imageHolder}>
-                <img src={promoImage3} alt="pictures" />
-              </div>
-              <div className={styles.description}>
-                <span>
-                  Start to sell your crafts and grow your hobby as business too
-                </span>
-                <div className={styles.buttonHolder}>
-                  <Button
-                    className={`${styles.btn} ${styles.yellow}`}
-                    text={"Let’s start!"}
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcSet={promoProviderMobile}
                   />
+
+                  <source
+                    media="(min-width: 769px) and (max-width: 1024px)"
+                    srcSet={promoProviderTablet}
+                  />
+
+                  <img
+                    src={promoProviderDesctop}
+                    alt="pictures"
+                    className="responsiveImage"
+                  />
+                </picture>
+              </div>
+              <div className={styles.content}>
+                <div className={styles.textHolder}>
+                  <p>
+                    Start to sell your crafts and grow your hobby as business
+                    too
+                  </p>
+                </div>
+                <div className={styles.buttonHolder}>
+                  <Button className={styles.yellow} text={"Let’s start!"} />
                 </div>
               </div>
             </div>

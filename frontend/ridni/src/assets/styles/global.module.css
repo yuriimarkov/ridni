@@ -5,12 +5,7 @@
 *,
 *::before,
 *::after {
-<<<<<<< HEAD
-   padding: 0;
-   margin: 0;
-=======
   padding: 0;
->>>>>>> e1dd469e24d8d692523a2c72369a049a98398f50
 }
 
 body {
