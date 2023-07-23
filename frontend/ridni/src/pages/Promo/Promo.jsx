@@ -1,15 +1,12 @@
 import React from "react";
 
 import styles from "./Promo.module.css";
-import globalStyle from "./../../assets/styles/global.module.css";
-import promoJewelery from "../../assets/images/promoJewelery.png";
-import promoDecor from "../../assets/images/promoDecor.png";
-import promoForHome from "../../assets/images/promoForHome.png";
 import promoProviderDesctop from "../../assets/images/promoImage3.png";
 import promoProviderTablet from "../../assets/images/promoProviderTablet.png";
 import promoProviderMobile from "../../assets/images/promoProviderMobile.png";
 import logoWhite from "../../assets/images/logoWhite.svg";
 import Button from "../../components/Button/Button";
+import Slider from "../../components/Sliders/Slider";
 
 const Promo = () => {
   return (
@@ -21,10 +18,7 @@ const Promo = () => {
           people
         </div>
         <div className={styles.buttonHolder}>
-          <Button
-            className={`${styles.baseBtn} ${styles.whiteBtn}`}
-            text={"Go shop now"}
-          />
+          <Button className="btn whiteBtn" text={"Go shop now"} />
         </div>
       </header>
       <main>
@@ -47,69 +41,15 @@ const Promo = () => {
           </div>
         </section>
         <section className={styles.popularCategoryPromo}>
-          <div className={`${styles.container} ${globalStyle.container}`}>
+          <div className={`${styles.container} container`}>
             <h2 className={styles.heading}>Most popular categories</h2>
             <div className={styles.cards}>
-              <div className={styles.cardItem}>
-                <div className={styles.imageHolder}>
-                  <img src={promoJewelery} alt="pictures" />
-                </div>
-                <h3 className={styles.itemHeading}>Jewelery and accessoires</h3>
-                <div className={styles.textHolder}>
-                  <p className={styles.paragraph}>
-                    Adorn yourself with exquisite handmade jewelry and
-                    accessories, crafted by talented artisans with love and soul
-                  </p>
-                </div>
-                <div className={styles.buttonHolder}>
-                  <Button className={styles.yellow} text={"Want it!"} />
-                </div>
-              </div>
-              <div className={styles.cardItem}>
-                <div className={styles.imageHolder}>
-                  <img src={promoDecor} alt="pictures" />
-                </div>
-                <h3 className={styles.itemHeading}>Decor</h3>
-                <div className={styles.textHolder}>
-                  <p className={styles.paragraph}>
-                    Find one-of-a-kind handmade decor pieces that bring charm
-                    and personality to any room at your home
-                  </p>
-                </div>
-                <div className={styles.buttonHolder}>
-                  <Button
-                    className={styles.yellow}
-                    text={"Want it!"}
-                    onClick={() => {}}
-                  />
-                </div>
-              </div>
-              <div className={styles.cardItem}>
-                <div className={styles.imageHolder}>
-                  <img src={promoForHome} alt="pictures" />
-                </div>
-                <h3 className={styles.itemHeading}>For home</h3>
-                <div className={styles.textHolder}>
-                  <p className={styles.paragraph}>
-                    Discover andmade treasures to elevate your living space with
-                    unique decor, textiles, ceramics, and furniture
-                  </p>
-                </div>
-                <div className={styles.buttonHolder}>
-                  <Button className={styles.yellow} text={"Want it!"} />
-                </div>
-              </div>
-            </div>
-            <div className={styles.pagination}>
-              <span
-                className={`${styles.paginationItem} ${styles.paginationItemActive}`}
-              ></span>
-              <span className={`${styles.paginationItem}`}></span>
+              <Slider />
             </div>
           </div>
         </section>
         <section className={styles.sellersPromo}>
-          <div className={`${styles.container} ${globalStyle.container}`}>
+          <div className={`${styles.container} container`}>
             <h2 className={styles.heading}>Become a creativity provider</h2>
             <div className={styles.info}>
               <div className={styles.imageHolder}>
@@ -139,7 +79,7 @@ const Promo = () => {
                   </p>
                 </div>
                 <div className={styles.buttonHolder}>
-                  <Button className={styles.yellow} text={"Let’s start!"} />
+                  <Button className="btn yellowBtn" text={"Let’s start!"} />
                 </div>
               </div>
             </div>
@@ -147,7 +87,7 @@ const Promo = () => {
         </section>
       </main>
       <footer className={styles.footer}>
-        <div className={`${styles.container} ${globalStyle.container}`}>
+        <div className={`${styles.container} container`}>
           <div className={styles.footerLogo}>
             <img src={logoWhite} alt="logotype" />
           </div>

@@ -1,0 +1,16 @@
+@import "./../../assets/styles/variables.module.css";
+
+
+.swiperPaginationBullet {
+  cursor: pointer;
+  width: 0.5625rem; /* 9px */
+  height: 0.5625rem; /* 9px */
+  background-color: transparent;
+  border-radius: 50%;
+  border: 0.0625rem solid var(--key-green);
+}
+
+.swiperPaginationBulletActive {
+  background-color: var(--key-green);
+}
+
