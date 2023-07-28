@@ -20,6 +20,12 @@
   background-color: var(--emerald-green);
   color: var(--white);
 }
+
+.header .container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .header .headerSlogan {
     margin: 0;
     padding-top: 30.375rem; /* 486px */
@@ -35,7 +41,7 @@
 
   .header .logoImg {
     position: relative;
-    padding-right: 14.25rem; /* 252px */
+    padding-right: 15.25rem; /* 252px */
   }
   .header .logoImg:before {
     content: "";
@@ -56,6 +62,12 @@
 /*Start Main*/
 
 /*Start Section Benefits*/
+
+.sectionBenefits .container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
 .sectionBenefits .heading {
     padding: 8.3125rem 0; /* 133px */
   }
@@ -66,7 +78,7 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 9.375rem; /* 150px */
     grid-row-gap: 8.625rem; /* 143px */
-    padding: 0 3.125rem 11.25rem; /* 0 50px 180px */
+    padding-bottom: 11.25rem; /* 0 50px 180px */
   }
 
 .sectionBenefits.benefitsItem1 {
@@ -207,7 +219,9 @@
     font-weight: 300;
     line-height: 3.35rem;
   }
-
+  .sellersPromo .buttonHolder {
+    padding-left: 25px;
+  }
   .sellersPromo .buttonHolder button {
     padding: 0.8125rem 1.8125rem;
     font-size: 2.25rem;
@@ -276,6 +290,10 @@
 
   .sellersPromo .textHolder {
     font-size: 2.5rem;
+  }
+
+  .sellersPromo .buttonHolder {
+    padding-left: 0;
   }
 
   .footer .footerLogo {
@@ -436,6 +454,10 @@
     line-height: 4.6875rem;
     background-size: 13.75rem auto, 18.75rem auto;
     background-position: top 0 left 0, top 0px right 0;
+  }
+
+  .header .container {
+    padding:  0;
   }
   .header  .content {
       text-align: center;

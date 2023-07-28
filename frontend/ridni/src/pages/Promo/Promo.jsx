@@ -12,31 +12,35 @@ const Promo = () => {
   return (
     <div className={styles.wrapper}>
       <header className={styles.header}>
-        <div className={styles.content}>
-          <h1 className={styles.headerSlogan}>Crafted with love</h1>
-          <span className={styles.logoImg}>by</span>
-          people
-        </div>
-        <div className={styles.buttonHolder}>
-          <Button className="btn whiteBtn" text={"Go shop now"} />
+        <div className={styles.container}>
+          <div className={styles.content}>
+            <h1 className={styles.headerSlogan}>Crafted with love</h1>
+            <span className={styles.logoImg}>by</span>
+            people
+          </div>
+          <div className={styles.buttonHolder}>
+            <Button className="btn whiteBtn" text={"Go shop now"} />
+          </div>
         </div>
       </header>
       <main>
         <section className={styles.sectionBenefits}>
-          <h2 className={styles.heading}>Why you should join us?</h2>
-          <div className={styles.benefits}>
-            <div className={`${styles.benefitsItem} ${styles.benefitsItem1}`}>
-              Keeping up <br />
-              with trends
-            </div>
-            <div className={`${styles.benefitsItem} ${styles.benefitsItem2}`}>
-              Global customers
-            </div>
-            <div className={`${styles.benefitsItem} ${styles.benefitsItem3}`}>
-              Creative products
-            </div>
-            <div className={`${styles.benefitsItem} ${styles.benefitsItem4}`}>
-              Verified sellers
+          <div className={styles.container}>
+            <h2 className={styles.heading}>Why you should join us?</h2>
+            <div className={styles.benefits}>
+              <div className={`${styles.benefitsItem} ${styles.benefitsItem1}`}>
+                Keeping up <br />
+                with trends
+              </div>
+              <div className={`${styles.benefitsItem} ${styles.benefitsItem2}`}>
+                Global customers
+              </div>
+              <div className={`${styles.benefitsItem} ${styles.benefitsItem3}`}>
+                Creative products
+              </div>
+              <div className={`${styles.benefitsItem} ${styles.benefitsItem4}`}>
+                Verified sellers
+              </div>
             </div>
           </div>
         </section>
