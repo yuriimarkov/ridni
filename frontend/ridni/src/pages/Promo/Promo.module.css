@@ -341,6 +341,12 @@
     font-size: 1.3125rem;
   }
 
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .footer .footerLogo {
     width: calc(30% - 10px);
   }
