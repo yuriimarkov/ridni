@@ -1,0 +1,111 @@
+@import "../../assets/styles/variables.module.css";
+
+.authLayout {
+    background-color: var(--emerald-green);
+    background-image: url(./../../assets/images/logoLarge.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7.78rem 5.06rem ;
+    gap: 14.69rem;
+    min-height: 100vh;
+}
+
+.imagesHolder {
+    width: calc(100% - 45rem );
+    padding-left: 6rem;
+}
+
+
+.imagesHolder img {
+    height: auto;
+}
+
+.formHolder {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 2 - 10px);
+    padding: 3.75rem 2.38rem;
+    background-color: var(--white);
+    border-radius: 1.25rem;
+    min-height: 48.4375rem;
+}
+
+
+.formHeading {
+    display: flex;
+    flex-direction: column;
+    gap: 2.06rem;
+    padding-bottom: 5.62rem;
+}
+
+.link {
+    color: var(--key-green);
+    text-decoration: underline;
+}
+
+.formInputHolder {
+    width: 100%;
+    display: flex;
+    padding-bottom: 2.81rem;
+}
+
+.formInputHolder .input {
+    border: 1px solid var(--key-green);
+    outline: var(--key-green);
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.75rem ;
+}
+
+.title {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 2.1875rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+}
+
+.formControl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 13.68rem;
+}
+
+.checkboxHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.checkbox {
+    border-radius: 0.1875rem;
+    border: 0.7px solid var(--key-green);
+    width: 1.1875rem;
+    height: 1.1875rem;
+}
+
+.social {
+    display: flex;
+    gap: 2.38rem;
+    align-items: center;
+}
+
+.iconHolder {
+    display: flex;
+    gap: 1.25rem;
+}
+

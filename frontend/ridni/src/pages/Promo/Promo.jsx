@@ -7,6 +7,7 @@ import promoProviderMobile from "../../assets/images/promoProviderMobile.png";
 import logoWhite from "../../assets/images/logoWhite.svg";
 import Button from "../../components/Button/Button";
 import Slider from "../../components/Sliders/Slider";
+import { NavLink } from "react-router-dom";
 
 const Promo = () => {
   return (
@@ -19,7 +20,9 @@ const Promo = () => {
             people
           </div>
           <div className={styles.buttonHolder}>
-            <Button className="btn whiteBtn" text={"Go shop now"} />
+            <NavLink to="/login">
+              <Button className="btn whiteBtn" text={"Go shop now"} />
+            </NavLink>
           </div>
         </div>
       </header>

@@ -1,0 +1,73 @@
+@import "../../../assets/styles/variables.module.css";
+
+.form {
+    width: 100%;
+}
+
+.formInputHolder {
+    width: 100%;
+    display: flex;
+    padding-bottom: 2.81rem;
+}
+
+.formInputHolder .input {
+    border: 1px solid var(--key-green);
+    outline: var(--key-green);
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.75rem ;
+    font-family: var(--secondary-font);
+}
+
+.input::placeholder {
+    color: var(--gray);
+}
+
+.formInputHolder.reset {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.title {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 2.1875rem;
+}
+
+.formControl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 13.68rem;
+}
+
+.checkboxHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.checkbox {
+    border-radius: 0.1875rem;
+    border: 0.7px solid var(--key-green);
+    width: 1.1875rem;
+    height: 1.1875rem;
+}
+
+.label {
+    font-family: var(--secondary-font);
+    line-height: 0.75rem;
+    font-weight: 400;
+}
+
+.resetLink {
+    color: var(--light-gray);
+    font-family: var(--secondary-font);
+    line-height: 0.75rem;
+    text-decoration-line: underline;
+
+}
+
+
