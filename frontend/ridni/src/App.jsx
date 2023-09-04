@@ -10,7 +10,7 @@ import SellerLogin from "./pages/Auth/Login/Seller/SellerLogin";
 import SellerSignin from "./pages/Auth/Signin/Seller/SellerSignin";
 import ConfirmSeller from "./pages/Auth/Signin/Seller/ConfirmSeller";
 
-const App = () => {g
+const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Promo />}></Route>
