@@ -9,7 +9,7 @@ const SellerLogin = () => {
       <AuthLayout
         logotype={logotype}
         title={"Log In"}
-        link={"/signin-business"}
+        link={"/signin-seller"}
         subtitle={"business"}
       >
         <LoginForm />
