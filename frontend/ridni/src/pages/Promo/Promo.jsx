@@ -86,7 +86,9 @@ const Promo = () => {
                   </p>
                 </div>
                 <div className={styles.buttonHolder}>
-                  <Button className="btn yellowBtn" text={"Let’s start!"} />
+                  <NavLink to="/signin-seller">
+                    <Button className="btn yellowBtn" text={"Let’s start!"} />
+                  </NavLink>
                 </div>
               </div>
             </div>

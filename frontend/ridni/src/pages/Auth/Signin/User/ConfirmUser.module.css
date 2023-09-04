@@ -1,6 +1,13 @@
-@import '../../../assets/styles/variables.module.css';
+@import '../../../../assets/styles/variables.module.css';
 
 .confirm {
+    background-color: var(--emerald-green);
+    background-image: url(../../../../assets/images/logoLarge.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.content {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -25,7 +32,7 @@
 .contacts .text,
 .link {
     width: calc(100% / 2);
-    color: var(--key-yellow);
+    color: var(--black);
 }
 
 

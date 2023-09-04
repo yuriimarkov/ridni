@@ -2,10 +2,8 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import styles from "./ResetForm.module.css";
 import Button from "../../../components/Button/Button";
-import { useNavigate } from "react-router-dom";
 
-const ResetForm2 = ({ onRegister }) => {
-  const navigate = useNavigate();
+const СonfirmResetForm = ({ onRegister, setStep }) => {
   const {
     register,
     handleSubmit,
@@ -17,7 +15,6 @@ const ResetForm2 = ({ onRegister }) => {
 
   const onSubmit = (data) => {
     console.log(data);
-    navigate("/activited");
   };
 
   const validateConfirmPassword = (value) => {
@@ -57,7 +54,9 @@ const ResetForm2 = ({ onRegister }) => {
             validate: validateConfirmPassword,
           })}
         />
-        {errors.confirmPassword && <span>{errors.confirmPassword.message}</span>}
+        {errors.confirmPassword && (
+          <span>{errors.confirmPassword.message}</span>
+        )}
       </div>
       <div className={styles.buttonHolder}>
         <Button className="btn formBtn" text="Continue" />
@@ -66,4 +65,4 @@ const ResetForm2 = ({ onRegister }) => {
   );
 };
 
-export default ResetForm2;
+export default СonfirmResetForm;

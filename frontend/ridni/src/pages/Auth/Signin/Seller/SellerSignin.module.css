@@ -1,0 +1,9 @@
+@import "../../../../assets/styles/variables.module.css";
+
+.signin {
+    background-color: var(--black);
+    background-image: url(./../../../../assets/images/logoBussinesLarge.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+

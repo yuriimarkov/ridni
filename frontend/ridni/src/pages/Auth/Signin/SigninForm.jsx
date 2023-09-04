@@ -4,7 +4,7 @@ import styles from "./SigninForm.module.css";
 import Button from "../../../components/Button/Button";
 import { useNavigate } from "react-router-dom";
 
-const SigninForm = ({ onRegister }) => {
+const SigninForm = ({ onRegister, navigateLink }) => {
   const navigate = useNavigate();
   const {
     register,
@@ -13,8 +13,10 @@ const SigninForm = ({ onRegister }) => {
   } = useForm({ mode: "onChange" });
   const onSubmit = (data) => {
     console.log(data);
-    navigate("/activited");
+    navigate(navigateLink);
   };
+
+  console.log(navigateLink)
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>

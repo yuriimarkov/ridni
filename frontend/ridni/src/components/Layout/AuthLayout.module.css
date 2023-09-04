@@ -1,12 +1,5 @@
 @import "../../assets/styles/variables.module.css";
 
-.authLayout {
-    background-color: var(--emerald-green);
-    background-image: url(./../../assets/images/logoLarge.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    
-}
 
 .container {
     display: flex;
@@ -18,14 +11,28 @@
     min-height: 100vh;
 }
 
-.imagesHolder {
+.logoHolder {
     width: calc(100% - 45rem );
-    padding-left: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.93rem;
+}
+
+.imagesHolder {
+    width: 100%;
+   max-width: 24.4375rem;
 }
 
 
 .imagesHolder img {
     height: auto;
+}
+
+.logoSubtitle {
+    font-size: 2.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 2.2725rem;
+    color: var(--white);
 }
 
 .formHolder {

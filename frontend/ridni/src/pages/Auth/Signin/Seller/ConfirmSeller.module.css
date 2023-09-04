@@ -1,0 +1,38 @@
+@import '../../../../assets/styles/variables.module.css';
+
+.confirm {
+        background-color: var(--black);
+        background-image: url(./../../../../assets/images/logoBussinesLarge.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+}
+
+.content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70vh;
+}
+
+.textHolder  {
+    font-size: 1.25rem;
+    line-height: normal;
+    font-family: var(--secondary-font);
+}
+
+.contacts {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.4rem;
+}
+
+.contacts .text,
+.link {
+    width: calc(100% / 2);
+    color: var(--black);
+}
+
+

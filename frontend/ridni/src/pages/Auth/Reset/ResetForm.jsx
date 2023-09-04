@@ -4,7 +4,7 @@ import styles from "./ResetForm.module.css";
 import Button from "../../../components/Button/Button";
 import { useNavigate } from "react-router-dom";
 
-const ResetForm = ({ onRegister }) => {
+const ResetForm = ({ onRegister, setStep }) => {
   const navigate = useNavigate();
   const {
     register,
@@ -12,6 +12,7 @@ const ResetForm = ({ onRegister }) => {
     formState: { errors },
   } = useForm({ mode: "onChange" });
   const onSubmit = (data) => {
+    setStep(2)
     console.log(data);
     navigate("/activited");
   };

@@ -1,0 +1,9 @@
+@import "../../../../assets/styles/variables.module.css";
+
+.signin {
+    background-color: var(--emerald-green);
+    background-image: url(./../../../../assets/images/logoLarge.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
