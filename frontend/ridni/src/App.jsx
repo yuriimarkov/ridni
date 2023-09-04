@@ -15,7 +15,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Promo />}></Route>
       <Route path="/login" element={<UserLogin />}></Route>
-      <Route path="/seller-login" element={<SellerLogin />}></Route>
+      <Route path="/login-seller" element={<SellerLogin />}></Route>
       <Route path="/confirm-seller" element={<ConfirmSeller />}></Route>
       <Route path="/confirm" element={<ConfirmUser />}></Route>
       <Route path="/reset" element={<Reset />}></Route>
