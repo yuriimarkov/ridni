@@ -9,7 +9,7 @@ const SellerSignin = () => {
   };
   return (
     <section className={styles.signin}>
-      <AuthLayout logotype={logotype} title={"Sign In"} link={"/login-seller"} subtitle={'business'}>
+      <AuthLayout logotype={logotype} title={"Register your shop"} link={"/login-seller"} subtitle={'business'}>
         <SigninForm onRegister={handleRegister} navigateLink={'/confirm-seller'} />
       </AuthLayout>
     </section>

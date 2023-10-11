@@ -1,4 +1,0 @@
-[build]
-  base = "frontend/ridni/public"
-  command = "npm run build"
-  publish = "build/"
